@@ -1,5 +1,6 @@
 from logging import error
 from flask import Flask, render_template, request, redirect
+from flask.helpers import url_for
 from werkzeug.exceptions import abort
 
 app = Flask(__name__)
@@ -26,7 +27,7 @@ def test(nombre,edad,sexo):
         nombre = nombre 
         edad = edad 
         sexo = sexo
-        pregunta1 = request.form.get('pregunta1')
+        pregunta1 = request.form.getlist('pregunta1')
         pregunta2 = request.form.get('pregunta2')
         pregunta3 = request.form.get('pregunta3')
         pregunta4 = request.form.get('pregunta4')
@@ -115,7 +116,7 @@ def test(nombre,edad,sexo):
         print(total)
         print(resultado)
         print(pregunta1)
-        return  redirect("/resultados/" + nombre + '/'+ edad + '/' + sexo + '/' + resultado + '/' + pregunta1 + '/' + total)
+        return  render_template('resultados.html', nombre = nombre , edad =edad , sexo=sexo, resultado=resultado, pregunta1=pregunta1)
     return render_template('test.html', nombre = nombre, edad = edad, sexo = sexo)
 
 @app.route('/resultados/<nombre>/<edad>/<sexo>/<resultado>/<pregunta1>/<total>')

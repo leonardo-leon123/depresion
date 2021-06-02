@@ -13,16 +13,17 @@
                 Sexo: {{sexo}} </h1>
             <img src="{{ url_for('static', filename='img/tabla.png') }}" alt="">
             <div class="suma-resultado" >
-                <p>Emocion elegida:</p> <span> <strong> {{pregunta1}} </strong> </span>
-                <p>Resultado del Test de emociones:</p> <span id="test" > <strong> {{resultado}} </strong>   </span>
-                <p>Resultado de AF:</p id="AF" > <span> 10 </span>
-                <p>Total de Puntos:</p> <span id="total" > {{total}} </span>
+                <p>Emocion elegida:</p> <span> <strong> 
+                   {{pregunta1}}
+                </strong> </span>
+                <p>Resultado del Test de emociones:</p> <span id="test" > {{resultado}} </span>
+                <p>Resultado de AF:</p id="AF" > <input type="number" name="" id="AF">
+                <p id="p-total" style="display: none;" >Total de Puntos:</p> <span id="total" >  </span>
             </div>
-            <a href="/registro">
-                <button>
-                    Tomar otro test
+            
+                <button onclick="total()">
+                    Calcular mi Resultado
                 </button>
-            </a>
         </div>
     </section>
 
