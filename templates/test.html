@@ -1,0 +1,313 @@
+{%extends 'base.html'%}
+{% block title %}Title{% endblock %}
+{%block content%}
+    
+<section class="test">
+    <div class="test-preguntas">
+        <h1> Tus datos son: 
+            <br>
+            <br>
+            <hr>
+            Nombre: {{nombre}} 
+            <br>
+            Edad: {{edad}} 
+            <br>
+            Sexo: {{sexo}} </h1>
+            <hr>
+            <a href="/registro">
+                <button>
+                    Cambiar datos
+                </button>
+            </a>
+            <br>
+            <br>
+            <h1>Contesta las siguientes preguntas para medir tu nivel de intensidad de depresión:</h1>
+        <form method="POST">
+            <!-- pregunta1 -->
+            <div class="pregunta-container">
+                <h1 class="pregunta" >1) A continuación, marque la emocion que experimente al recordar un evento que le haya marcado en su vida. </h1>
+                <label class="container">a. Amor 
+                    <input type="radio" value="a. Amor" name="pregunta1" checked>
+                    <span class="checkmark"></span>
+                </label>
+                <label class="container">b. Tristeza 
+                    <input type="radio" value="b. Tristeza" name="pregunta1">
+                    <span class="checkmark"></span>
+                </label>
+                <label class="container">c. Euforia 
+                    <input type="radio" name="pregunta1" value="c. Euforia" >
+                    <span class="checkmark"></span>
+                </label>
+                <label class="container">e. Odio
+                    <input type="radio"  name="pregunta1" value="e. Odio" >
+                    <span class="checkmark"></span>
+                </label>
+                <label class="container">f. Envidia
+                    <input type="radio"    name="pregunta1" value="f. Envidia" >
+                    <span class="checkmark"></span>
+                </label>
+                <label class="container">g. Celos
+                    <input type="radio"    name="pregunta1" value="g. Celos" >
+                    <span class="checkmark"></span>
+                </label>
+                <label class="container">h. Afecto
+                    <input type="radio"    name="pregunta1" value="h. Afecto" >
+                    <span class="checkmark"></span>
+                </label>
+                <label class="container">i. Agrado 
+                    <input type="radio"    name="pregunta1" value="i. Agrado " >
+                    <span class="checkmark"></span>
+                </label>
+                <label class="container">j. Esperanza 
+                    <input type="radio"    name="pregunta1" value="j. Esperanza" >
+                    <span class="checkmark"></span>
+                </label>
+                <label class="container">k. Optimismo 
+                    <input type="radio"    name="pregunta1" value="k. Optimismo" >
+                    <span class="checkmark"></span>
+                </label>
+                <label class="container">l. Gratitud
+                    <input type="radio"    name="pregunta1" value="l. Gratitud" >
+                    <span class="checkmark"></span>
+                </label>
+                <label class="container">m. Enfado
+                    <input type="radio"    name="pregunta1" value="m. Enfado" >
+                    <span class="checkmark"></span>
+                </label>
+                <label class="container">n. Indignación 
+                    <input type="radio"    name="pregunta1" value="n. Indignación" >
+                    <span class="checkmark"></span>
+                </label>
+                <label class="container">o. Impaciencia
+                    <input type="radio"    name="pregunta1" value="o. Impaciencia" >
+                    <span class="checkmark"></span>
+                </label>
+                <label class="container">p. Venganza 
+                    <input type="radio"    name="pregunta1" value="p. Venganza " >
+                    <span class="checkmark"></span>
+                </label>
+                <label class="container">q. Satisfacción
+                    <input type="radio"    name="pregunta1" value="q. Satisfacción" >
+                    <span class="checkmark"></span>
+                </label>
+                <label class="container">r. Compasión
+                    <input type="radio"    name="pregunta1" value="r. Compasión" >
+                    <span class="checkmark"></span>
+                </label>
+                <label class="container">s. Alegría 
+                    <input type="radio"    name="pregunta1" value="s. Alegría" >
+                    <span class="checkmark"></span>
+                </label>
+                <label class="container">t. Culpa
+                    <input type="radio"    name="pregunta1" value="t. Culpa" >
+                    <span class="checkmark"></span>
+                </label>
+                <label class="container">u. Resentimiento 
+                    <input type="radio"    name="pregunta1" value="u. Resentimiento" >
+                    <span class="checkmark"></span>
+                </label>
+                <label class="container">v. Rabia
+                    <input type="radio"    name="pregunta1" value="v. Rabia" >
+                    <span class="checkmark"></span>
+                </label>
+                <label class="container">w. Preocupación
+                    <input type="radio"    name="pregunta1" value="w. Preocupación" >
+                    <span class="checkmark"></span>
+                </label>
+                <label class="container">x. Desesperación 
+                    <input type="radio"    name="pregunta1" value="x. Desesperación" >
+                    <span class="checkmark"></span>
+                </label>
+                               
+            </div>
+            <!-- pregunta2 -->
+            <div class="pregunta-container">
+                <h1 class="pregunta">2) ¿Ha experimentado trastornos en su estado de animo como tristeza, cansancio, desesperanza? </h1>
+                <label class="container">a. Me da tristeza esporádica según las circunstancias 
+                    <input type="radio" value="A" name="pregunta2" checked>
+                    <span class="checkmark"></span>
+                </label>
+                <label class="container">b. Me siento triste o decaído/a, pero me animo sin dificultad 
+                    <input type="radio" value="B" name="pregunta2">
+                    <span class="checkmark"></span>
+                </label>
+                <label class="container">c. Tengo generalmente sentimientos de tristeza o melancolía. Mi estado de animo se ve influido por circunstancias externas.
+                    <input type="radio" value="C" name="pregunta2">
+                    <span class="checkmark"></span>
+                </label>
+                <label class="container">d. Me siento abatido, triste, desahuciado en todo momento. 
+                    <input type="radio" value="D" name="pregunta2">
+                    <span class="checkmark"></span>
+                </label>
+            </div>
+            <!-- pregunta3 -->
+            <div class="pregunta-container">
+                <h1 class="pregunta">3) ¿Ha tenido miedo intenso y continuo ante algunas situaciones, acompañado de taquicardias, sudoraciones, respiración agitada y sensación de cansancio?  </h1>
+                <label class="container">a. Solo tensión interna pasajera  
+                    <input type="radio" value="A" name="pregunta3" checked>
+                    <span class="checkmark"></span>
+                </label>
+                <label class="container">b. Tengo sentimientos ocasionales de nerviosismo y malestar indefinido
+                    <input type="radio" value="B" name="pregunta3">
+                    <span class="checkmark"></span>
+                </label>
+                <label class="container">c. Tengo sentimientos continuos de tensión interna o pánico intermitente que puedo dominar con alguna dificultad. 
+                    <input type="radio" value="C" name="pregunta3">
+                    <span class="checkmark"></span>
+                </label>
+                <label class="container">d. Tengo terror o angustia tenaz, un pánico irresistible.  
+                    <input type="radio" value="D" name="pregunta3">
+                    <span class="checkmark"></span>
+                </label>
+            </div>
+            <!-- pregunta4 -->
+            <div class="pregunta-container">
+                <h1 class="pregunta">4) ¿Ha notado alteraciones en su patrón de sueño? </h1>
+                <label class="container">a. Duermo como siempre.   
+                    <input type="radio" value="A" name="pregunta4" checked>
+                    <span class="checkmark"></span>
+                </label>
+                <label class="container">b. Ligera dificultad para dormirse o sueño ligeramente reducido, sueño ligero.
+                    <input type="radio" value="B" name="pregunta4">
+                    <span class="checkmark"></span>
+                </label>
+                <label class="container">c. Sueño reducido o interrumpido durante al menos 2 horas. 
+                    <input type="radio" value="C" name="pregunta4">
+                    <span class="checkmark"></span>
+                </label>
+                <label class="container">d. Menos de 2 a 3 horas de sueño.   
+                    <input type="radio" value="D" name="pregunta4">
+                    <span class="checkmark"></span>
+                </label>
+            </div>
+            <!-- pregunta5 -->
+            <div class="pregunta-container">
+                <h1 class="pregunta">5) ¿Ha notado algún cambio en su apetito?  </h1>
+                <label class="container">a. Apetito normal o aumentado.    
+                    <input type="radio" value="A" name="pregunta5" checked>
+                    <span class="checkmark"></span>
+                </label>
+                <label class="container">b. Apetito ligeramente reducido.
+                    <input type="radio" value="B" name="pregunta5">
+                    <span class="checkmark"></span>
+                </label>
+                <label class="container">c. Nada de apetito, no me sabe la comida.
+                    <input type="radio" value="C" name="pregunta5">
+                    <span class="checkmark"></span>
+                </label>
+                <label class="container">d. Detesto comer, pero necesito hacerlo.   
+                    <input type="radio" value="D" name="pregunta5">
+                    <span class="checkmark"></span>
+                </label>
+            </div>
+            <!-- pregunta6 -->
+            <div class="pregunta-container">
+                <h1 class="pregunta">6) ¿Ha notado dificultad en su capacidad para concentrarse, formular oraciones, pensamientos? 
+                </h1>
+                <label class="container">a. Ninguna dificultad     
+                    <input type="radio" value="A" name="pregunta6" checked>
+                    <span class="checkmark"></span>
+                </label>
+                <label class="container">b. Tengo dificultades ocasionales para centrar los pensamientos. 
+                    <input type="radio" value="B" name="pregunta6">
+                    <span class="checkmark"></span>
+                </label>
+                <label class="container">c. Tengo dificultades para concentrarse y a causa de esto me cuesta leer o mantener una conversación. 
+                    <input type="radio" value="C" name="pregunta6">
+                    <span class="checkmark"></span>
+                </label>
+                <label class="container">d. Soy incapaz de leer o mantener una conversación si no es con gran dificultad.   
+                    <input type="radio" value="D" name="pregunta6">
+                    <span class="checkmark"></span>
+                </label>
+            </div>
+            <!-- pregunta7 -->
+            <div class="pregunta-container">
+                <h1 class="pregunta">7) ¿Ha experimentado dificultad para iniciar su rutina diaria con sus respectivas actividades? (Interés por su aseo personal, preparación de alimento, salir a trabajar, levantarse de la cama)  
+                </h1>
+                <label class="container">a. Casi sin dificultad para empezar algo.     
+                    <input type="radio" value="A" name="pregunta7" checked>
+                    <span class="checkmark"></span>
+                </label>
+                <label class="container">b. Tengo dificultades para empezar actividades.  
+                    <input type="radio" value="B" name="pregunta7">
+                    <span class="checkmark"></span>
+                </label>
+                <label class="container">c. Tengo dificultades para empezar actividades rutinarias sencillas.
+                    <input type="radio" value="C" name="pregunta7">
+                    <span class="checkmark"></span>
+                </label>
+                <label class="container">d. No logro hacer nada, a menos que reciba ayuda    
+                    <input type="radio" value="D" name="pregunta7">
+                    <span class="checkmark"></span>
+                </label>
+            </div>
+            <!-- pregunta8 -->
+            <div class="pregunta-container">
+                <h1 class="pregunta">8) ¿Ha experimentado desinterés por sus amistades, familia, trabajo, por situaciones que solía disfrutar?   
+                </h1>
+                <label class="container">a. Interés normal por el entorno y por otras personas.      
+                    <input type="radio" value="A" name="pregunta8" checked>
+                    <span class="checkmark"></span>
+                </label>
+                <label class="container">b. Siento una menor capacidad para disfrutar de las cosas que normalmente me interesaban.   
+                    <input type="radio" value="B" name="pregunta8">
+                    <span class="checkmark"></span>
+                </label>
+                <label class="container">c. Pérdida de interés por el entorno. Pérdida de sentimientos respecto a los amigos y conocidos. 
+                    <input type="radio" value="C" name="pregunta8">
+                    <span class="checkmark"></span>
+                </label>
+                <label class="container">d. Tengo la experiencia de estar emocionalmente paralizado, incapacidad para sentir enfado, pena o placer y una total o incluso dolorosa falta de sentimientos hacia los parientes próximos y amigos.     
+                    <input type="radio" value="D" name="pregunta8">
+                    <span class="checkmark"></span>
+                </label>
+            </div>
+            <!-- pregunta9 -->
+            <div class="pregunta-container">
+                <h1 class="pregunta">9) ¿Ha experimentado pensamientos negativos con sentimientos de culpa, incapacidad y/o fracaso?   
+                </h1>
+                <label class="container">a. Sin pensamientos pesimistas      
+                    <input type="radio" value="A" name="pregunta9" checked>
+                    <span class="checkmark"></span>
+                </label>
+                <label class="container">b. Tengo ideas variables de fracaso, autorreproche o autodesprecio.    
+                    <input type="radio" value="B" name="pregunta9">
+                    <span class="checkmark"></span>
+                </label>
+                <label class="container">c. Si, tengo ideas persistentes de pensamientos pesimistas como autorreproche o autodesprecio y cada vez veo mas pesimista con respecto al futuro. 
+                    <input type="radio" value="C" name="pregunta9">
+                    <span class="checkmark"></span>
+                </label>
+                <label class="container">d. Me siento fatal no creo que mi dolor tenga algún remedio.      
+                    <input type="radio" value="D" name="pregunta9">
+                    <span class="checkmark"></span>
+                </label>
+            </div>
+            <!-- pregunta10 -->
+            <div class="pregunta-container">
+                <h1 class="pregunta">10) ¿Ha tenido pensamientos o ideas suicidas?    
+                </h1>
+                <label class="container">a. No, disfruto la vida tal como viene      
+                    <input type="radio" value="A" name="pregunta10" checked>
+                    <span class="checkmark"></span>
+                </label>
+                <label class="container">b. Estoy cansado de vivir, pero solo con pensamientos pasajeros.     
+                    <input type="radio" value="B" name="pregunta10">
+                    <span class="checkmark"></span>
+                </label>
+                <label class="container">c. Realmente estaría mejor si no estuviera aquí pero no tengo ninguna intención.
+                    <input type="radio" value="C" name="pregunta10">
+                    <span class="checkmark"></span>
+                </label>
+                <label class="container">d. …      
+                    <input type="radio" value="D" name="pregunta10">
+                    <span class="checkmark"></span>
+                </label>
+            </div>
+            <input class="form-item button-form" value="Enviar" type="submit">
+        </form>
+    </div>
+</section>
+
+{%endblock%}

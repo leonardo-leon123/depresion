@@ -1,0 +1,32 @@
+{%extends 'base.html'%}
+{% block title %}Title{% endblock %}
+{%block content%}
+    <section class="resultados">
+        <div class="resultados-container">
+            <h1>Resultados:</h1>
+            <h1> Tus datos son:
+                <br>     
+                Nombre: {{nombre}} 
+                <br>
+                Edad: {{edad}} 
+                <br>
+                Sexo: {{sexo}} </h1>
+            <img src="{{ url_for('static', filename='img/tabla.png') }}" alt="">
+            <div class="suma-resultado" >
+                <p>Emocion elegida:</p> <span> <strong> {{pregunta1}} </strong> </span>
+                <p>Resultado del Test de emociones:</p> <span id="test" > <strong> {{resultado}} </strong>   </span>
+                <p>Resultado de AF:</p id="AF" > <span> 10 </span>
+                <p>Total de Puntos:</p> <span id="total" > {{total}} </span>
+            </div>
+            <a href="/registro">
+                <button>
+                    Tomar otro test
+                </button>
+            </a>
+        </div>
+    </section>
+
+    
+
+
+{%endblock%}

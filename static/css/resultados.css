@@ -1,0 +1,33 @@
+.resultados
+{
+    height: auto;
+    background-color:#1F1F23;
+    display: flex;
+    justify-content: center;
+    align-items: center;
+}
+.resultados-container
+{
+    display: flex;
+    flex-direction: column;
+    background: #26262A;
+    width: auto;
+    height: auto;
+    padding: 50px 100px;
+    border-radius: 10px;
+}
+.resultados-container h1 
+{
+    font-size: 33px;
+    font-weight: 700;
+    text-align: center;
+    margin: 30px;
+}
+.resultados-container p 
+{
+    font-size: 28px;
+}
+.resultados-container span
+{
+    font-size: 28px;
+}
