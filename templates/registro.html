@@ -14,7 +14,7 @@
         <label class="form-item" for="nombre"> Nombre: </label>
         <input class="form-item" name="nombre" id="nombre" type="text">
         <label class="form-item" for="edad">Edad:</label>
-        <input class="form-item" name="edad" type="number">
+        <input class="form-item" name="edad" id="edad" type="number">
         <label class="form-item" for="sexo">Sexo:</label>
         <div class="wrapper">
             <input type="radio" name="sexo" value="Hombre" id="option-1" checked>
@@ -33,10 +33,21 @@
                  <span>Other</span>
               </label>
            </div>
-        <input class="form-item button-form" value="Aceptar" type="submit">        
+           <div class="btn-container">
+             <input class="form-item button-form" value="Aceptar" type="submit">
+             <button class="button-form" onclick="anon()">Anónimo</button>           
+           </div>
     </form>
 </section>
 
+<script>
+  function anon()
+  {
+    document.getElementById("nombre").value = "Anónimo"
+    document.getElementById("edad").value = "0"
+    document.getElementById("option-3").checked = true
+  }
+</script>
 
     
 
