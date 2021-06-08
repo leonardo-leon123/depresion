@@ -1,6 +1,6 @@
 .registro
 {
-    height: 100vh;
+    height: auto;
     background-color:#1F1F23;
     display: flex;
     justify-content: center;
@@ -31,7 +31,6 @@
 }
 .form-registro input
 {
-    padding: 10px 0px;
     border-radius: 10px;
     border: none;
 }
@@ -47,6 +46,10 @@
 .button-form:hover
 {
     cursor: pointer;
+}
+.btn-container
+{
+  align-self: center;
 }
 
 input[type=text], input[type=number]
