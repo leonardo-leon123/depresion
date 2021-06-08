@@ -1,6 +1,6 @@
 .registro
 {
-    height: auto;
+    height: 100vh;
     background-color:#1F1F23;
     display: flex;
     justify-content: center;

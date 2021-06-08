@@ -46,7 +46,7 @@ button:hover
 }
 .hero
 {
-    height: 100vh;
+    height: auto;
     background-image: url(../img/bg.jpg);
     background-size: cover;
     background-position: center;
